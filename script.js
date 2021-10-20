@@ -24,6 +24,6 @@ function multiplication() {
 }
 window.addEventListener('DOMContentLoaded', function (multiplication) {
     console.log("DOM fully loaded and parsed");
-    let b = document.getElementById("result");
+    let b = document.getElementById("result-cl");
     d.addEventListener("click", multiplication);
  });
