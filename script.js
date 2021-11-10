@@ -5,7 +5,7 @@ function multiplication() {
 
     var z = x * y;
 
-    if (x===0 || y===0)   
+	if (x===0 || y===0)   
     {
 	let dr = "Ошибка!";
         document.getElementById('result').innerHTML = dr ;
@@ -30,7 +30,9 @@ function multiplication() {
    			 { document.getElementById('result').innerHTML = z;}
    			 }
 	}
-	}
+	
+    
+}
 window.addEventListener('DOMContentLoaded', function (multiplication) {
     console.log("DOM fully loaded and parsed");
     let b = document.getElementById("result");
