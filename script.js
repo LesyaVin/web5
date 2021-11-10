@@ -8,21 +8,21 @@ function multiplication() {
 	if (x===0 || y===0)   
     {
         alert('Отсутствуют значения параметров.');
-	let dat = "Ошибка!";
-        document.getElementById('result ').innerHTML = dat;
+	let str = "Ошибка!";
+        document.getElementById('result').innerHTML = str ;
     }
 	
     if (x<0 || y<0)
     {
         alert('Некорректный ввод! Введите положительные числа.'); 
-	let dat = "Ошибка!";
-        document.getElementById('result ').innerHTML = dat;
+	let str  = "Ошибка!";
+        document.getElementById('result').innerHTML = str ;
     }
 
     if (isNaN(x)==true || isNaN(y)==true) 
     {    alert('Заполните все поля.');
-	let dat = "Ошибка!";
-        document.getElementById('result ').innerHTML = dat;
+	let str  = "Ошибка!";
+        document.getElementById('result').innerHTML = str ;
     }
 	
     else
