@@ -33,6 +33,6 @@ function multiplication() {
 	}
 window.addEventListener('DOMContentLoaded', function (multiplication) {
     console.log("DOM fully loaded and parsed");
-    let b = document.getElementById("proiz");
+    let b = document.getElementById("result");
     d.addEventListener("click", multiplication);
  });
