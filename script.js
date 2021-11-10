@@ -5,30 +5,32 @@ function multiplication() {
 
     var z = x * y;
 
-	if (x===0 || y===0)   
+    if (x===0 || y===0)   
     {
-        alert('Отсутствуют значения параметров.');
-	let str = "Ошибка!";
-        document.getElementById('result').innerHTML = str ;
+	let dr = "Ошибка!";
+        document.getElementById('result').innerHTML = dr ;
+ 	alert('Отсутствуют значения параметров.');
     }
-	
-    if (x<0 || y<0)
-    {
-        alert('Некорректный ввод! Введите положительные числа.'); 
-	let str  = "Ошибка!";
-        document.getElementById('result').innerHTML = str ;
-    }
+    else{	
+   	 if (x<0 || y<0)
+   	 {
+		let dr  = "Ошибка!";
+   	     document.getElementById('result').innerHTML = dr ;
+		 alert('Некорректный ввод! Введите положительные числа.'); 
+  	  }
+	else{
 
-    if (isNaN(x)==true || isNaN(y)==true) 
-    {    alert('Заполните все поля.');
-	let str  = "Ошибка!";
-        document.getElementById('result').innerHTML = str ;
-    }
+   		 if (isNaN(x)==true || isNaN(y)==true) 
+   		 { 	let dr  = "Ошибка!";
+    		    document.getElementById('result').innerHTML = dr ;
+			alert('Заполните все поля.');
+  		  }
 	
-    else
-        document.getElementById('result').innerHTML = z;
-    
-}
+   			 else
+   			 { document.getElementById('result').innerHTML = z;}
+   			 }
+	}
+	}
 window.addEventListener('DOMContentLoaded', function (multiplication) {
     console.log("DOM fully loaded and parsed");
     let b = document.getElementById("result-cl");
